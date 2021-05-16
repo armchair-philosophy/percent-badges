@@ -1,8 +1,8 @@
 name: 'Cobertura Coverage Action Badge'
 description: 'Cobertura Coverage Action Badge'
 branding:
-  icon: "percent"
-  color: "green"
+  icon: 'percent'
+  color: 'green'
 inputs:
   coverage-file-name:
     description: 'Location to read Cobertura Coverage XML file from'
