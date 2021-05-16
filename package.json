@@ -1,5 +1,5 @@
 {
-  "name": "@action-badges/cobertura-coverage-xml",
+  "name": "@action-badges/cobertura-coverage-xml-badges",
   "description": "Cobertura Coverage Action Badge",
   "version": "0.0.0",
   "private": true,
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/action-badges/cobertura-coverage-xml.git"
+    "url": "git+https://github.com/action-badges/cobertura-coverage-xml-badges.git"
   },
-  "homepage": "https://github.com/action-badges/cobertura-coverage-xml",
+  "homepage": "https://github.com/action-badges/cobertura-coverage-xml-badges",
   "author": "chris48s",
   "license": "MIT",
   "dependencies": {
