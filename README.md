@@ -2,8 +2,7 @@
 
 Serverless coverage badge from cobertura XML coverage file with Github Actions.
 
-[![Run tests](https://github.com/action-badges/cobertura-coverage-xml-badges/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/action-badges/cobertura-coverage-xml-badges/actions/workflows/test.yml)
-[![Build Dist](https://github.com/action-badges/cobertura-coverage-xml-badges/actions/workflows/build-dist.yml/badge.svg?branch=main)](https://github.com/action-badges/cobertura-coverage-xml-badges/actions/workflows/build-dist.yml)
+![build](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/main/build-status.svg)
 ![coverage](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/main/coverage.svg)
 
 Example:
