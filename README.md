@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Make Coverage Badge
-        uses: action-badges/cobertura-coverage-xml-badges@0.2.0
+        uses: action-badges/cobertura-coverage-xml-badges@0.2.1
         with:
           file-name: coverage.svg
           github-token: '${{ secrets.GITHUB_TOKEN }}'
