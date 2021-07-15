@@ -3,7 +3,7 @@
 const { promises: fs } = require("fs");
 const core = require("@actions/core");
 const fastXmlParser = require("fast-xml-parser");
-const { BaseAction, invoke } = require("@action-badges/core");
+const { BaseAction } = require("@action-badges/core");
 
 function floorCount(value, yellow, yellowgreen, green) {
   if (value <= 0) {
@@ -65,11 +65,6 @@ class CoverageXml extends BaseAction {
   }
 }
 
-async function run() {
-  return await invoke(CoverageXml);
-}
-
 module.exports = {
   CoverageXml,
-  run,
 };
