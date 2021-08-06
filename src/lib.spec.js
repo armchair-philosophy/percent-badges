@@ -32,9 +32,9 @@ describe("CoverageXml", function () {
     process.env["INPUT_COVERAGE-FILE-NAME"] = "./testdata/valid.xml";
     const stub = new CoverageXml();
     const badge = await stub.render();
-    assert.deepStrictEqual(
-      { message: "88%", messageColor: "yellowgreen" },
-      badge
-    );
+    assert.deepStrictEqual(badge, {
+      message: "88%",
+      messageColor: "yellowgreen",
+    });
   });
 });
