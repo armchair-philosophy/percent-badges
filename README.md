@@ -20,13 +20,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: action-badges/create-orphan-branch@0.1.0
+        with:
+          branch-name: badges
 
       - name: Make Coverage Badge
         uses: action-badges/cobertura-coverage-xml-badges@0.2.1
         with:
           file-name: coverage.svg
+          badge-branch: badges
           github-token: '${{ secrets.GITHUB_TOKEN }}'
           coverage-file-name: ./coverage.xml
 ```
