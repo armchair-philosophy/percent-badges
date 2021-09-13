@@ -21,7 +21,7 @@
   "dependencies": {
     "@action-badges/core": "^0.2.1",
     "@actions/core": "^1.5.0",
-    "fast-xml-parser": "^3.19.0"
+    "fast-xml-parser": "^3.20.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.0",
