@@ -2,7 +2,7 @@
 
 const { promises: fs } = require("fs");
 const core = require("@actions/core");
-const fastXmlParser = require("fast-xml-parser");
+const { XMLParser, XMLValidator } = require("fast-xml-parser");
 const { BaseAction } = require("@action-badges/core");
 
 function floorCount(value, yellow, yellowgreen, green) {
@@ -48,11 +48,12 @@ class CoverageXml extends BaseAction {
   async fetch() {
     const { coverageFileName } = this.getInputs();
     const buffer = await fs.readFile(coverageFileName, "utf8");
-    const validateResult = fastXmlParser.validate(buffer);
+    const validateResult = XMLValidator.validate(buffer);
     if (validateResult !== true) {
       throw new Error(validateResult.err.msg);
     }
-    return fastXmlParser.parse(buffer, { ignoreAttributes: false });
+    const parser = new XMLParser({ ignoreAttributes: false });
+    return parser.parse(buffer);
   }
 
   async render() {
