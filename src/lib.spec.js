@@ -1,7 +1,5 @@
-"use strict";
-
-const assert = require("assert");
-const { CoverageXml } = require("./lib");
+import assert from "assert";
+import { CoverageXml } from "./lib.js";
 
 describe("CoverageXml", function () {
   afterEach(function () {

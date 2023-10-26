@@ -1,9 +1,7 @@
-"use strict";
-
-const { promises: fs } = require("fs");
-const core = require("@actions/core");
-const { XMLParser, XMLValidator } = require("fast-xml-parser");
-const { BaseAction } = require("@action-badges/core");
+import { promises as fs } from "fs";
+import core from "@actions/core";
+import { XMLParser, XMLValidator } from "fast-xml-parser";
+import { BaseAction } from "@action-badges/core";
 
 function floorCount(value, yellow, yellowgreen, green) {
   if (value <= 0) {
@@ -66,6 +64,4 @@ class CoverageXml extends BaseAction {
   }
 }
 
-module.exports = {
-  CoverageXml,
-};
+export { CoverageXml };

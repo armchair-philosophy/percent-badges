@@ -1,8 +1,4 @@
-"use strict";
+import { invoke } from "@action-badges/core";
+import { CoverageXml } from "./lib.js";
 
-const { invoke } = require("@action-badges/core");
-const { CoverageXml } = require("./lib");
-
-(async () => {
-  return await invoke(CoverageXml);
-})();
+await invoke(CoverageXml);
