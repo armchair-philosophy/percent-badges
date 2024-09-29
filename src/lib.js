@@ -34,7 +34,7 @@ class CoveragePercentage extends BaseAction {
   async render() {
     const percentage = Number.parseFloat(this.getInputs().percentage);
     if (Number.isNaN(percentage)) {
-      throw new Error("inputs.percentage is not a number")
+      throw new Error("inputs.percentage is not a number");
     }
     return {
       message: `${percentage.toFixed(0)}%`,

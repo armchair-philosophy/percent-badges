@@ -11,7 +11,7 @@ describe("CoverageXml", function () {
     const stub = new CoveragePercentage();
     await assert.rejects(stub.render(), {
       name: "Error",
-      message: "inputs.percentage is not a number"
+      message: "inputs.percentage is not a number",
     });
   });
 
