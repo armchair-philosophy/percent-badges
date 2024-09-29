@@ -1,11 +1,10 @@
-name: 'Cobertura Coverage Action Badge'
-description: 'Cobertura Coverage Action Badge'
+name: 'Percentage Action Badge'
+description: 'Percentage Action Badge'
 branding:
   icon: 'percent'
   color: 'green'
 inputs:
-  coverage-file-name:
-    description: 'Location to read Cobertura Coverage XML file from'
+  percentage:
     required: true
 runs:
   using: 'node20'

@@ -1,12 +1,12 @@
-# cobertura-coverage-xml-badges
+# percentage-badges
 
 Serverless coverage badge from cobertura XML coverage file with Github Actions.
 
-![build](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/main/build-status.svg)
-![coverage](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/main/coverage.svg)
-![tag](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/github-tag.svg)
-![license](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/main/package-license.svg)
-![node](https://raw.githubusercontent.com/action-badges/cobertura-coverage-xml-badges/badges/.badges/main/package-node-version.svg)
+![build](https://raw.githubusercontent.com/action-badges/percentage-badges/badges/.badges/main/build-status.svg)
+![coverage](https://raw.githubusercontent.com/action-badges/percentage-badges/badges/.badges/main/coverage.svg)
+![tag](https://raw.githubusercontent.com/action-badges/percentage-badges/badges/.badges/github-tag.svg)
+![license](https://raw.githubusercontent.com/action-badges/percentage-badges/badges/.badges/main/package-license.svg)
+![node](https://raw.githubusercontent.com/action-badges/percentage-badges/badges/.badges/main/package-node-version.svg)
 
 Example:
 
@@ -26,7 +26,7 @@ jobs:
           branch-name: badges
 
       - name: Make Coverage Badge
-        uses: action-badges/cobertura-coverage-xml-badges@0.3.1
+        uses: action-badges/percentage-badges@0.3.1
         with:
           file-name: coverage.svg
           badge-branch: badges

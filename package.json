@@ -1,8 +1,7 @@
 {
-  "name": "@action-badges/cobertura-coverage-xml-badges",
-  "description": "Cobertura Coverage Action Badge",
+  "name": "@action-badges/percentage-badges",
+  "description": "Percentage Action Badge",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "build": "ncc build src/action.js -o dist --minify",
     "lint": "eslint \"**/*.{js,cjs}\"",
@@ -13,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/action-badges/cobertura-coverage-xml-badges.git"
+    "url": "git+https://github.com/armchair-philosophy/percentage-badges.git"
   },
-  "homepage": "https://github.com/action-badges/cobertura-coverage-xml-badges",
+  "homepage": "https://github.com/armchair-philosophy/percentage-badges",
   "author": "chris48s",
   "license": "MIT",
   "dependencies": {
