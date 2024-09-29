@@ -2,6 +2,7 @@
   "name": "@action-badges/percentage-badges",
   "description": "Percentage Action Badge",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "build": "ncc build src/action.js -o dist --minify",
     "lint": "eslint \"**/*.{js,cjs}\"",
@@ -19,8 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "@action-badges/core": "^0.3.1",
-    "@actions/core": "^1.10.1",
-    "fast-xml-parser": "^4.5.0"
+    "@actions/core": "^1.10.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
